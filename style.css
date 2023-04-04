@@ -1,50 +1,91 @@
-body{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to left bottom, rgb(160, 229, 252) ,rgb(232, 157, 168),rgb(250, 213, 162));
-    font-family: 'Courier New', Courier, monospace;
+.body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to left bottom,
+    rgb(160, 229, 252),
+    rgb(232, 157, 168),
+    rgb(250, 213, 162)
+  );
+  font-family: "Courier New", Courier, monospace;
 }
-.container{
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    width: 80%;
-    text-align: center;
-    color: #9106e7;
+.container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  width: 80%;
+  text-align: center;
+  color: #9106e7;
 }
-.heading{
-    font-size: 36px;
-    font-weight: 500;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
-    letter-spacing: 3px; 
+.heading {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 3px;
 }
-.joke{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.joke {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.btn{
-    font-size: medium;
-    font-weight: 600;
-    border-radius: 6px;
-    cursor: pointer;
-    padding: 8px;
-    background-color:rgba(255, 255, 255, 0.3);
-    border-color: rgba(255, 255, 255, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    width: 300px;
-    color: #c129b2;
+.btn {
+  font-size: medium;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 300px;
+  color: #c129b2;
 }
-.btn:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    transition: all 300ms ease-in-out;
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease-in-out;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.footer {
+  position: relative;
+
+  background: #3586ff;
+  min-height: 20px;
+  padding: 8px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.social-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 57px;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+.para-foot {
+  font-size: medium;
+  font-weight: 600;
 }
